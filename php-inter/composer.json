@@ -1,0 +1,17 @@
+{
+    "name": "f-nely/php-intermediario",
+    "description": "Curso de PHP intermediario do Treinaweb",
+    "type": "project",
+    "authors": [
+        {
+            "name": "nely de faria",
+            "email": "nelly.nf54@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Treinaweb\\": "src/treinaweb"
+        }
+    }
+}
