@@ -11,4 +11,8 @@ class Jogador extends Ator
         echo "Atira no inimigo";
     }
 
+    protected function defineVida()
+    {
+        $this->vida = 100;
+    }
 }

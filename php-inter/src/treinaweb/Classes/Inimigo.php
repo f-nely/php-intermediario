@@ -10,4 +10,9 @@ class Inimigo extends Ator
     {
         echo "Inimigo dá porrada";
     }
+
+    protected function defineVida()
+    {
+        $this->vida = 150;
+    }
 }
