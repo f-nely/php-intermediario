@@ -16,9 +16,7 @@ class Fornecedor extends Pessoa
     public function exibe()
     {
         echo "<br>Dados do Fornecedor<br>";
-        echo "Código: $this->codigo <br>";
-        echo "Nome: $this->nome <br>";
-        echo "Email: $this->email <br>";
+        parent::exibe();
         echo "CNPJ: $this->cnpj <br>";
     }
 }

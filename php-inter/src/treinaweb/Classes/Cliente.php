@@ -16,9 +16,7 @@ class Cliente extends Pessoa
     public function exibe()
     {
         echo "Dados do Cliente<br>";
-        echo "Código: $this->codigo <br>";
-        echo "Nome: $this->nome <br>";
-        echo "Email: $this->email <br>";
+        parent::exibe();
         echo "CPF: $this->cpf <br>";
     }
 }
