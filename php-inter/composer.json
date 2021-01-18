@@ -8,7 +8,9 @@
             "email": "nelly.nf54@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+      "ext-mbstring": "*"
+    },
     "autoload": {
         "psr-4": {
             "Treinaweb\\": "src/treinaweb"
