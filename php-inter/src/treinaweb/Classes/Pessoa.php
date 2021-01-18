@@ -17,6 +17,9 @@ class Pessoa
 
     public function defineNome($nome): void
     {
+        if (mb_strlen($nome, 'utf8') < 3) {
+            throw new \Exception("Nome precisa ter mais de 5 caracteres");
+        }
         $this->nome = $nome;
     }
 
@@ -32,7 +35,7 @@ class Pessoa
             return true;
         }
 
-        exit("Email inválido");
+        throw new \Exception("Email inválido");
     }
 
     public function recuperaEmail(): string
