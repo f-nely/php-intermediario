@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<treinaweb>
+    <alunos>
+        <nome>Thiago</nome>
+        <curso>PHP Básico</curso>
+    </alunos>
+    <aluno>
+        <nome>Pedro</nome>
+        <curso>PHP Intermediário</curso>
+    </aluno>
+    <aluno>
+        <nome>Cristina</nome>
+        <curso>PHP Avançado</curso>
+    </aluno>
+</treinaweb>
+
