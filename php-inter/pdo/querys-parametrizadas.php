@@ -9,10 +9,13 @@ try {
 
     $id = $_GET['id'];
 
-    $stmt = $pdo->prepare('SELECT * FROM funcionario WHERE id=:id AND nome=:nome');
+    $stmt = $pdo->prepare('SELECT * FROM funcionario WHERE id=:id');
 
-    $stmt->bindValue(':id', $id, PDO::PARAM_INT);
-    $stmt->bindValue(':nome', 'Pedro', PDO::PARAM_STR);
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    //$stmt->bindValue(':nome', 'Pedro', PDO::PARAM_STR);
+
+    $id = 5;
+
     $stmt->execute();
 
     $funcionarios = $stmt->fetchAll();
