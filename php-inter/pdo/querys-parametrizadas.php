@@ -9,9 +9,11 @@ try {
 
     $id = $_GET['id'];
 
-    $stmt = $pdo->prepare('SELECT * FROM funcionario WHERE id=? OR nome=?');
+    $stmt = $pdo->prepare('SELECT * FROM funcionario WHERE id=:id AND nome=:nome');
 
-    $stmt->execute([$id, 'Pedro']);
+    $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+    $stmt->bindValue(':nome', 'Pedro', PDO::PARAM_STR);
+    $stmt->execute();
 
     $funcionarios = $stmt->fetchAll();
 
